@@ -1,0 +1,85 @@
+	* {
+		margin: 0px;
+		padding: 0px; 
+	}
+	
+	#main {
+		position: relative;
+		width: 1200px;
+		height: 800px;
+		margin: 5% auto;
+		box-shadow: 0 0 50px #a8a8b7;
+		background-color: gray;
+	}
+
+	#container {
+		position:absolute;
+		left: 50%;
+		top: 50%;
+		margin-left: -450px;
+		margin-top: -300px;
+		width: 900px;
+		height: 600px;
+		border: 2px solid black;
+		overflow: hidden;
+		cursor: move;
+	}
+
+	#list {
+		width: 9000px;
+		height: 600px;
+		position: absolute;
+		left: -900px;
+	}
+
+	.arrow {
+		text-decoration: none;
+	}
+
+	#list > img {
+		width: 900px;
+		height: 600px;
+		float: left;
+	}
+	#buttons {
+		position: absolute;
+		width: auto;/*position设置成absolute之后块级元素的width将不再与父元素的width相同！！！*/
+		height: 18px;
+		bottom: 20px;
+		left: 400px;
+	}
+	#buttons span {
+		cursor: pointer;
+		float: left;
+		border: 1px solid #fff;
+		width: 16px;
+		height: 16px;
+		border-radius: 8px;
+		background: #333;
+		margin-right: 5px;
+	}
+	#buttons .on {
+		background: #ff5c26;
+	}
+	.arrow {
+		position: absolute;
+		top: 270px;
+		display: none;
+		width: 60px;
+		height: 60px;
+		line-height: 60px;
+		text-align: center;
+		font-size: 50px;
+		font-weight: bold;
+		background-color: rgba(0,0,0,.5);
+		color: #fff;
+	}
+	#prev {
+		left: 20px;
+	}
+	#next {
+		right: 20px;
+	}
+	#container:hover .arrow {
+		display: block;
+	}
